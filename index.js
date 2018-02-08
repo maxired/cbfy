@@ -1,1 +1,5 @@
-module.exports = cb => ([res => cb(null, res), err => cb(err)])
+module.exports = cb =>
+  ([
+    res => process.nextTick(cb.bind(null, undefined, res)),
+    err => process.nextTick(cb.bind(null, err))
+  ])
