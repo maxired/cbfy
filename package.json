@@ -1,6 +1,6 @@
 {
   "name": "cbfy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Call a callback after a Promise return",
   "repository": "github:maxired/cbfy",
   "main": "index.js",
